@@ -1,0 +1,100 @@
+Perfect — this is exactly the right approach 👏
+Below is your SOHO Network Design Project written as a realistic problem statement, the way you’d find in professional labs or case studies. You can use this to design and implement your own solution in Cisco Packet Tracer or GNS3.
+
+🧩 Project Title:
+
+Small Office/Home Office (SOHO) Network Design and Implementation
+
+📄 Problem Statement:
+
+A small company named TechCore Solutions has recently set up a new office with around 25 employees working across different departments. They have requested a secure, scalable, and cost-effective network to support their daily operations such as file sharing, internet access, and inter-department communication.
+
+As the Network Engineer, you have been assigned to design and configure the entire internal network using Cisco devices.
+
+🎯 Project Requirements / Objectives:
+1. Network Topology:
+
+One router (to connect to the Internet Service Provider).
+
+Two switches (to connect all departments).
+
+Four VLANs representing the following departments:
+
+VLAN 10 – Administration (5 users)
+
+VLAN 20 – HR (5 users)
+
+VLAN 30 – IT (10 users)
+
+VLAN 40 – Guest Wi-Fi (5 users)
+
+2. IP Addressing:
+
+Use the network: 192.168.10.0/24
+
+Subnet and allocate IPs for each VLAN.
+
+Assign gateway IPs for each VLAN interface on the router.
+
+3. Routing:
+
+Configure Router-on-a-Stick for inter-VLAN routing.
+
+Ensure all VLANs can communicate with each other except Guest VLAN, which should have internet-only access.
+
+4. DHCP Configuration:
+
+Configure DHCP pools on the router to automatically assign IP addresses to each VLAN.
+
+Exclude gateway and static device IPs from the DHCP range.
+
+5. NAT Configuration:
+
+Simulate internet connectivity using NAT (overload or PAT).
+
+Only internal users should be able to access the internet using NAT.
+
+6. Security:
+
+Configure ACLs to block Guest VLAN (VLAN 40) from accessing internal VLANs (10, 20, 30).
+
+Allow Guest VLAN to access the internet only.
+
+7. Testing & Verification:
+
+Verify inter-VLAN communication (Admin ↔ HR ↔ IT).
+
+Verify that Guest VLAN users can access the internet but not internal departments.
+
+Test DHCP address allocation for each VLAN.
+
+Confirm NAT functionality for internet access.
+
+🧠 Deliverables:
+
+You need to submit or document:
+
+Network Topology Diagram (made in Cisco Packet Tracer or drawn separately).
+
+IP Addressing Table for all VLANs.
+
+Configuration commands (for router and switches).
+
+Verification screenshots (ping, show commands, DHCP leases, ACLs).
+
+Brief report explaining how the design meets the company’s requirements.
+
+💼 Expected Learning Outcomes:
+
+VLAN design and segmentation
+
+Router-on-a-stick inter-VLAN routing
+
+DHCP & NAT configuration on routers
+
+ACL-based network security
+
+End-to-end network verification and documentation
+
+Would you like me to create a sample topology diagram + IP plan for this same problem so you can start configuring it directly in Packet Tracer?
+(It’ll include device names, port numbers, VLAN IDs, and IP ranges.)
